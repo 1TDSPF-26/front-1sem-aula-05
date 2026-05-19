@@ -1,40 +1,81 @@
-#meu-modal{
-    background-color: #92e494;
-    color: #06b503;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align:center;
+#meu-modal {
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 
-    margin:10% auto;
-    
-    border-radius: .375rem;
-    width:100%;
-    height:50vh;
+  margin: 10% auto;
+
+  border: none;
+  border-radius: 0.75rem;
+  width: 80%;
+  max-width: 600px;
+  min-height: 300px;
+
+  padding: 24px;
 }
 
-#meu-modal::backdrop{
-    background-color: rgba(0,0,0,0.8);
+#meu-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-#fechar-modal{
-    background-color: #92e494;
-    color: #06b503;
-    border: 1.5px solid #123811;
-    float: right;
-    top:0;
-    right: 0;
-    cursor:pointer;
-    display:block;
-    font-size: 2.5rem;
-    width: 4%;
-    border-radius: 50%;
-
+#fechar-modal {
+  background-color: #ffffff;
+  color: #111827;
+  border: 1.5px solid #111827;
+  float: right;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-#fechar-modal::before{
-    content:"X";
+#fechar-modal::before {
+  content: "X";
 }
 
-.login-sucesso{
-    margin-top: 5%;
+.msg-sucesso {
+  text-align: center;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: #ecfdf5;
+  border: 2px solid #10b981;
+  margin-top: 50px;
+}
+
+.login-sucesso {
+  color: #047857;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.msg-erro {
+  text-align: center;
+  padding: 24px;
+  border-radius: 10px;
+  background-color: #fef2f2;
+  border: 2px solid #ef4444;
+  margin-top: 50px;
+}
+
+.login-erro-titulo {
+  color: #991b1b;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.login-erro-msg {
+  color: #dc2626;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.login-erro-ajuda {
+  color: #7f1d1d;
+  font-size: 1rem;
 }
